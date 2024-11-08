@@ -64,6 +64,10 @@ table { border-collapse: collapse; border-spacing: 0;}
     color: white;
 }
 
+.purple{
+    color:purple;
+}
+
 .italic{
     font-style: italic;
 }
@@ -333,4 +337,114 @@ main h3{
     margin-top: 1rem;
     margin-bottom: 1rem;
     font-size: 1.2rem;
+}
+
+/* Actividad 2 */
+
+#container-text{
+    max-width: 40%;
+    margin: 0px auto;
+}
+
+/* Actividad 3 */
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid black;
+    margin: 1rem auto;
+
+    max-width: 38%;
+    overflow:hidden;
+    background-color: #bec0c2;
+    box-sizing: border-box; 
+}
+
+.form-container h1{
+    margin: 1.5rem;
+    font-size: large;
+    font-weight: 700;
+}
+
+.form-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 5px;
+    padding: 1rem 2rem;
+    background-color: #edeeef;
+    box-sizing: border-box;
+
+    font-size: 1.25rem;
+}
+
+.form-wrapper label{
+    justify-self: flex-end;
+    align-self: center;
+    margin-right: 1rem;
+}
+
+.form-wrapper input, .form-wrapper select, .form-wrapper textarea {
+    padding: 8px;
+    width: 100%;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-wrapper .checkbox-group input {
+    width: auto;
+    margin-right: 5px;
+}
+
+.send-button {
+    grid-column: span 2;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.send-button button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #e5ede5;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
+    font-family: cursive;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    align-self: flex-start;
+    cursor: pointer;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
 }

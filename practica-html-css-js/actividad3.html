@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TP 3 - HTML | CSS </title>
+    <link rel="shortcut icon" href="assets/resources/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+<body style="background-color: rgb(36, 90, 218);">
+    <div class="form-container">
+
+        <div class="title-container">
+            <h1> Ayudanos a saber cómo podemos mejorar</h1>
+        </div>
+
+
+        <form action="#" method="post" class="form-wrapper">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" placeholder="Ingrese su nombre">
+
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Ingrese su correo">
+
+            <label for="bornIn">Fecha de Nacimiento</label>
+            <input type="text" id="bornIn" name="bornIn" placeholder="Ingrese su edad">
+
+            <label for="role">Rol</label>
+            <select id="role" name="role">
+                <option value="option1">Estudiante</option>
+                <option value="option2">Invitado</option>
+                <option value="option3">Ayudante</option>
+            </select>
+
+            <label for="recomend">¿Recomendarías esta carrera a otras personas?</label>
+            <div class="radio-group">
+                <label><input type="radio" id="recomend" name="recomend" value="yes"> Definitivamente</label>
+                <label><input type="radio" id="recomend" name="recomend" value="maybe"> Quizás</label>
+                <label><input type="radio" id="recomend" name="recomend" value="no"> No</label>
+            </div>
+
+            <label for="favorite">¿Qué es lo que más te gusta de la carrera?</label>
+            <select id="favorite" name="favorite">
+                <option value="optionA">La parte teórica</option>
+                <option value="optionB">La parte práctica</option>
+                <option value="optionC">El flan</option>
+            </select>
+
+            <label>¿Qué cosas crees que pueden mejorarse en un futuro?</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" id="tp" name="tp" value="tp"> Trabajos prácticos</label>
+                <label><input type="checkbox" id="exams" name="exams" value="exams"> Evaluaciones</label>
+                <label><input type="checkbox" id="tutors" name="tutors" value="tutors"> Tutores de cátedra</label>
+                <label><input type="checkbox" id="asign" name="asign" value="asign"> Plan de materias</label>
+                <label><input type="checkbox" id="tesis" name="tesis" value="tesis"> Acompañamiento a tesis</label>
+                <label><input type="checkbox" id="sched" name="sched" value="sched"> Horarios</label>
+                <label><input type="checkbox" id="plan" name="plan" value="plan"> Plan de correlativas</label>
+                <label><input type="checkbox" id="material" name="material" value="material"> Material de estudio</label>
+                <label><input type="checkbox" id="prof" name="prof" value="prof"> Prácticas profesionales</label>
+                <label><input type="checkbox" id="sol" name="sol" value="sol"> Prácticas solidarias</label>
+                <label><input type="checkbox" id="innov" name="innov" value="innov"> Innovación </label>
+            </div>
+
+            <label for="textbox">¿Tiene algún comentario o sugerencia?</label>
+            <textarea id="textbox" name="textbox" rows="4" placeholder="Ingrese su comentario"></textarea>
+
+            <div class="send-button">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
